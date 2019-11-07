@@ -12,4 +12,5 @@ if __name__ == "__main__":
     max_size = get_maximum_name_size(history_count_info)
     for info in history_count_info:
         percentages = get_percentages(info.amount, len(history_info))
-        print((max_size - len(info.name)) * " ", info.name, "|", percentages * "#", str(percentages) + "%")
+        print((max_size - len(info.name)) * " ", info.name, "|", percentages * "#", info.amount,
+              "(" + str(percentages) + "%)")
