@@ -22,3 +22,7 @@ def get_maximum_name_size(history_info):
             maximum = len(history_info[i].name)
 
     return maximum
+
+
+def get_percentages(amount, all_amount):
+    return amount* 100 // all_amount
