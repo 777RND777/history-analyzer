@@ -8,3 +8,5 @@ if __name__ == "__main__":
     history_info = get_browserhistory()["chrome"]
     history_count_info = get_history_count_info(history_info, limit)
     history_count_info = get_top_history_count_info(history_count_info, 10)
+
+    max_size = get_maximum_name_size(history_count_info)
