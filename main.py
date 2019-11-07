@@ -1,4 +1,8 @@
-from browserhistory import get_browserhistory as get_bh
+from browserhistory import get_browserhistory
+from history_funcs import get_history_count_info, get_top_history_count_info
+from math_funcs import get_maximum_name_size, get_percentages
 
-history = get_bh()
-print(history["chrome"][0])
+
+if __name__ == "__main__":
+    limit = 0
+    history_info = get_browserhistory()["chrome"]
